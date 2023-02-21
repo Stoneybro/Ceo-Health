@@ -2184,10 +2184,10 @@ textarea.form-control {
 }
 
 .main-nav .navbar-brand {
-  padding-top: 11px;
+  /* padding-top: 11px; */
   margin: 0px;
   margin-left: 15px;
-  padding-bottom: 11px;
+  /* padding-bottom: 11px; */
   position: relative;
 }
 
@@ -2203,7 +2203,7 @@ textarea.form-control {
     position: absolute;
     z-index: 5551;
     background-color: #ffffff;
-    padding: 40px;
+    /* padding: 40px; */
     top: -45px;
     bottom: auto;
     box-shadow: 0 7px 21px rgba(0, 0, 0, 0.1);
