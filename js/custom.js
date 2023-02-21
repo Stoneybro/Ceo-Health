@@ -66,7 +66,7 @@ jQuery(document).ready(function(){
 
     var loop = $(this).parent().data('loop'),
         autoplay = $(this).parent().data('autoplay'),
-        interval = 5000;
+        interval = 4000;
 
       $(this).owlCarousel({
         items: 1,
@@ -78,7 +78,7 @@ jQuery(document).ready(function(){
         autoplay: true,
         autoplayTimeout: interval,
         autoplayHoverPause: true,
-        smartSpeed:3000
+        smartSpeed:2500
       });
     });
   }
