@@ -2241,7 +2241,7 @@ textarea.form-control {
 .main-nav .navbar-toggler {
   align-self: flex-start;
   padding: 0;
-  background-color: #ec5598;
+  background-color:  rgba(115, 94, 89);
   border: none;
   cursor: pointer;
   border-radius: 0px;
@@ -3441,7 +3441,7 @@ textarea.form-control {
 @media (min-width: 768px) {
   .main-slider .common-inner .img-responsive {
     width: 95px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 }
 

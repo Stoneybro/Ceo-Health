@@ -74,20 +74,20 @@ a,
 .innerWrapper .table-responsive .table tbody th:first-child,
 .productSection .owl-nav .owl-prev:before,
 .productSection .owl-nav .owl-next:before {
-  color: #ec5598;
+  color:  rgba(115, 94, 89);
 }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-nav li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover,
   .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:hover {
-    color: #ec5598;
+    color:  rgba(115, 94, 89);
   }
 }
 
 .countrySelect .sbOptions a:hover,
 .custom-categories .custom-accordion .custom-panel h5:hover {
-  color: #ec5598 !important;
+  color:  rgba(115, 94, 89) !important;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus,
@@ -148,15 +148,15 @@ a,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .imagediv .showonhover,
 .expertSection .owl-theme .owl-dots .owl-dot.active span, .expertSection .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #ec5598;
+  background-color: rgba(115, 94, 89);
 }
 
 ::-moz-selection {
-  background-color: #ec5598;
+  background-color: rgba(115, 94, 89);
 }
 
 ::selection {
-  background-color: #ec5598;
+  background-color: rgba(115, 94, 89);
 }
 
 .btn-theme, .btn-theme:focus,
@@ -187,18 +187,18 @@ a,
 .tabCommon.singleTab .nav-tabs li a.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .expertSection .owl-theme .owl-dots .owl-dot span {
-  border-color: #ec5598;
+  border-color: rgba(115, 94, 89);
 }
 
 @media (min-width: 768px) {
   .navbar .navbar-nav li.open .dropdown-menu,
   .navbar .navbar-nav li.dropdown .dropdown-menu {
-    border-top-color: #ec5598;
+    border-top-color: rgba(115, 94, 89);
   }
 }
 
 .footerInfo {
-  border-top-color: #ec5598;
+  border-top-color: rgba(115, 94, 89);
 }
 
 .tabs-left .nav li a.active,
@@ -210,25 +210,25 @@ a,
 .tabs-left .nav li.active a a:active,
 .homeGallery ul.filter > li.active > a,
 .homeGallery ul.filter > li > a:hover {
-  border-bottom-color: #ec5598;
+  border-bottom-color: rgba(115, 94, 89);
 }
 
 .tabTop .nav li a.active span,
 .tabTop .nav li.active a span,
 .tabTop .nav li a:hover span {
-  border-bottom-color: rgba(236, 85, 152, 0.5);
+  border-bottom-color: rgba(35,24,21, 0.5);
 }
 
 .offerContent .offerTitle,
 .productMask {
-  background-color: rgba(236, 85, 152, 0.7);
+  background-color: rgba(35,24,21, 0.5);
 }
 
 .expertMask, .priceTableWrapper:hover .maskImage,
 .fancybox-bg {
-  background-color: rgba(236, 85, 152, 0.5);
+  background-color: rgba(35,24,21, 0.5);
 }
 
 .footerText .footerLogo .fill-primary {
-  fill: #ec5598;
+  fill: rgba(115, 94, 89);
 }
