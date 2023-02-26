@@ -74,20 +74,20 @@ a,
 .innerWrapper .table-responsive .table tbody th:first-child,
 .productSection .owl-nav .owl-prev:before,
 .productSection .owl-nav .owl-next:before {
-  color:  rgba(115, 94, 89);
+  color:  #D2AC47;
 }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-nav li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover,
   .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:hover {
-    color:  rgba(115, 94, 89);
+    color:  #D2AC47;
   }
 }
 
 .countrySelect .sbOptions a:hover,
 .custom-categories .custom-accordion .custom-panel h5:hover {
-  color:  rgba(115, 94, 89) !important;
+  color:  #D2AC47 !important;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus,
@@ -148,15 +148,15 @@ a,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .imagediv .showonhover,
 .expertSection .owl-theme .owl-dots .owl-dot.active span, .expertSection .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: rgba(115, 94, 89);
+  background-color: #D2AC47;
 }
 
 ::-moz-selection {
-  background-color: rgba(115, 94, 89);
+  background-color: #D2AC47;
 }
 
 ::selection {
-  background-color: rgba(115, 94, 89);
+  background-color: #D2AC47;
 }
 
 .btn-theme, .btn-theme:focus,
@@ -187,18 +187,18 @@ a,
 .tabCommon.singleTab .nav-tabs li a.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .expertSection .owl-theme .owl-dots .owl-dot span {
-  border-color: rgba(115, 94, 89);
+  border-color: #D2AC47;
 }
 
 @media (min-width: 768px) {
   .navbar .navbar-nav li.open .dropdown-menu,
   .navbar .navbar-nav li.dropdown .dropdown-menu {
-    border-top-color: rgba(115, 94, 89);
+    border-top-color: #D2AC47;
   }
 }
 
 .footerInfo {
-  border-top-color: rgba(115, 94, 89);
+  border-top-color: #D2AC47;
 }
 
 .tabs-left .nav li a.active,
@@ -210,13 +210,13 @@ a,
 .tabs-left .nav li.active a a:active,
 .homeGallery ul.filter > li.active > a,
 .homeGallery ul.filter > li > a:hover {
-  border-bottom-color: rgba(115, 94, 89);
+  border-bottom-color: #D2AC47;
 }
 
 .tabTop .nav li a.active span,
 .tabTop .nav li.active a span,
 .tabTop .nav li a:hover span {
-  border-bottom-color: rgba(35,24,21, 0.5);
+  border-bottom-color: #D2AC47;
 }
 
 .offerContent .offerTitle,
