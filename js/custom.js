@@ -72,10 +72,10 @@ jQuery(document).ready(function(){
         items: 1,
         loop: loop,
         margin: 0,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
         navText: [  ],
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: interval,
         autoplayHoverPause: true,
         smartSpeed:2500
@@ -87,7 +87,7 @@ jQuery(document).ready(function(){
 
   if (heroSliderRtl.length !== 0) {
     heroSliderRtl.owlCarousel({
-      rtl: true
+      rtl: false
     });
   }
 

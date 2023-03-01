@@ -198,6 +198,13 @@ a:hover, a:focus {
   .secotionTitle {
     padding: 50px 0 30px 0;
   }
+  .rowx{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+   
+   }
 }
 
 @media (min-width: 768px) {
@@ -411,7 +418,18 @@ body.bodyColor.wrapper {
 body.bodyColor .navbar-sticky {
   margin: 0 auto;
 }
+.row{
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
 
+}
+.rowx{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+ }
 .navbar .container {
   position: relative;
 }
@@ -650,6 +668,7 @@ button {
   background-color: transparent;
   border-radius: 0;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 .btn-common:focus, .btn-common.active, .btn-common:active, .btn-common:hover {
@@ -659,7 +678,7 @@ button {
 
 @media (min-width: 320px) {
   .btn-common {
-    margin: 0 auto 20px auto;
+    margin: 0 ;
     padding: 14px 38px;
     font-size: 14px;
   }
@@ -3346,15 +3365,22 @@ textarea.form-control {
   .main-slider .slide-inner1, .main-slider .slide-inner2, .main-slider .slide-inner4 {
     transform: translate(0, -50%);
     top: 50%;
-    left: 10%;
+    left: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: black;
   }
 }
 
 @media (min-width: 768px) {
   .main-slider .slide-inner1, .main-slider .slide-inner2, .main-slider .slide-inner4 {
-    transform: translate(0, -30%);
+    /* transform: translate(0, -30%); */
     top: 50%;
     left: 0;
+    width: 60%;
+    color: black;
   }
 }
 
@@ -3486,15 +3512,29 @@ textarea.form-control {
 .aboutInner {
   position: relative;
 }
-
+.welcome{
+  text-align: left;
+  padding: 20px;
+}
 @media (min-width: 320px) {
   .aboutInner {
     height: auto;
     padding: 0 15px 0 15px;
     background-color: transparent;
   }
+  .welcome{
+    text-align: center;
+    padding: 20px;
+
+  }
 }
 
+.rowy{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  flex-wrap: wrap;
+}
 @media (min-width: 768px) {
   .aboutInner {
     width: 50%;
@@ -3503,6 +3543,7 @@ textarea.form-control {
     padding: 120px 0 0 0;
     background-color: #ffffff;
   }
+
 }
 
 @media (min-width: 320px) {
@@ -3957,6 +3998,8 @@ textarea.form-control {
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 30%;
+
 }
 
 @media (min-width: 320px) {
@@ -3977,8 +4020,9 @@ textarea.form-control {
   }
 }
 
-.offerContent .offerTitle h4 {
+.offerContent .offerTitle h3 {
   margin: 0;
+  color: white;
 }
 
 .offerContent .offerTitle h4 a {
