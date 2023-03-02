@@ -53,6 +53,7 @@
 /*=== MIXINS ===*/
 /*=== VARIABLES ===*/
 /*=== MEDIA QUERY ===*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   outline: 0;
   margin: 0;
@@ -66,7 +67,7 @@ html, * {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins';
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -193,10 +194,75 @@ a:hover, a:focus {
 .secotionTitle {
   text-align: center;
 }
+.vbig-card{
+  height: 100vh;
+  display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+.big-card{
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 4rem 3rem;
+}
+.big-card ul{
+  display: flex;
+  flex-direction: column;
+   gap: 20px;
+   color: black;
+  margin-left: 15px;
+}
+.big-card ul li{
+  list-style-type: disc;
+}
+.callact{
+  color: white;
+   font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+}
+.welcome{
+  text-align: left;
+  padding: 20px;
+  font-size: 28px; 
+  line-height: 1.5;
+  color: black;
+}
 
 @media (min-width: 320px) {
   .secotionTitle {
     padding: 50px 0 30px 0;
+  }
+  .welcome{
+    text-align: center;
+    padding:20px 10px;
+    font-size: 24px; 
+    line-height: 1.5;
+    color: black;
+  }
+  .callact{
+     font-size: 20px;
+     padding: 0 12px;
+  }
+  .big-card{
+    padding: 2.5rem 1rem;
+  }
+  .vbig-card{
+    height: 90vh;
+  }
+  .fa-quote-left,.fa-quote-right{
+    font-size: 30px;
+  }
+  .fa-quote-right{
+    width: 100%;
+    text-align: right;
+  }
+  .welcome-card{
+    padding: 20px 10px;
+  }
+  .big-card ul{
+    gap: 2rem;
   }
   .rowx{
     display:flex;
@@ -3512,21 +3578,14 @@ textarea.form-control {
 .aboutInner {
   position: relative;
 }
-.welcome{
-  text-align: left;
-  padding: 20px;
-}
+
 @media (min-width: 320px) {
   .aboutInner {
     height: auto;
     padding: 0 15px 0 15px;
     background-color: transparent;
   }
-  .welcome{
-    text-align: center;
-    padding: 20px;
-
-  }
+  
 }
 
 .rowy{
