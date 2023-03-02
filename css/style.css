@@ -67,7 +67,7 @@ html, * {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Open-sans',sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -106,7 +106,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', 'Open-sans',sans-serif;
   text-transform: uppercase;
   margin-top: 0;
   font-weight: 700;
