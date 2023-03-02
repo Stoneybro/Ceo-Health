@@ -249,7 +249,8 @@ a:hover, a:focus {
     padding: 2.5rem 1rem;
   }
   .vbig-card{
-    height: 90vh;
+   padding: 30px 0;
+  height: fit-content;
   }
   .fa-quote-left,.fa-quote-right{
     font-size: 30px;
