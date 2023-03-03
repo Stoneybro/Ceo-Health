@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Single Service - Ceo Health</title>
+  <title>Ceo Health</title>
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
   <link href="plugins/animate/animate.css" rel="stylesheet">
 
   <link href='plugins/selectbox/select_option1.css' rel='stylesheet'>
-  
+  <link href='plugins/owl-carousel/owl.carousel.min.css' rel='stylesheet' media='screen'>
   <link href='plugins/fancybox/jquery.fancybox.min.css' rel='stylesheet'>
   
-  
+  <link href='plugins/isotope/isotope.min.css' rel='stylesheet'>
   <link href='plugins/datepicker/datepicker.min.css' rel='stylesheet'>
   
-  
+ 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
   <link href="#" rel="stylesheet" id="rtl_css">
@@ -40,7 +40,30 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
+  <style>
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript,
+    if it's not present, don't show loader */
+    .no-js #loader {
+      display: none;
+    }
+
+    .js #loader {
+      display: block;
+      position: absolute;
+      left: 100px; top: 0;
+    }
+
+    .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(plugins/simple-pre-loader/images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+    }
+  </style>
 
 </head>
 
@@ -63,7 +86,7 @@
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
 
@@ -73,17 +96,17 @@
                 <ul class="row dropdown-menu justify-content-md-between">
                   <li class="">
                     <ul class="list-unstyled">
-                      <li><a href="service.html">All Services</a></li>
                       <li><a href="services/anti-aging.html">Anti-aging</a></li>
-                      <li><a href="services/anti-inflammatory.html">Anti-inflammatory</a></li>
+                      <li><a href="anti-inflammatory.html">Anti-inflammatory</a></li>
                       <li><a href="services/detox.html">Detoxification</a></li>
                       <li><a href="services/energy-boost.html">Energy boost</a></li>
+                      <li><a href="services/enhance-perfomance.html">Enhanced performance</a></li>
                     </ul>
                   </li>
 
                   <li class="">
                     <ul class="list-unstyled">
-                      <li><a href="services/enhance-perfomance.html">Enhanced performance</a></li>
+                      <li><a href="services/hangover.html">Hangover</a></li>
                       <li><a href="services/Hair-and-nails.html">Hair and nails</a></li>
                       <li><a href="services/immunity.html">Immunity</a></li>
                       <li><a href="services/mayer-cocktail.html">Mayer cocktail</a></li>
@@ -106,23 +129,21 @@
                 </ul>
               </li>
   
-  
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" aria-haspopup="true"  data-toggle="dropdown" aria-expanded="false" href="about.html">About us</a>
                 <ul class="dropdown-menu">
                     <li><a href="consultation.html">Consultation</a></li>
                     <li><a href="imaging.html">Imaging</a></li>
-                    <li><a href="imaging.html">Lab test</a></li>
+                    <li><a href="lab-test.html">Lab test</a></li>
                   </ul>
             </li>
-
               
               <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false" href="blog-right-sidebar.html">Blog</a>
+                <a class="nav-link dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false" href="blog-fullwidth.html">Blog</a>
               </li>
 
               <li class="nav-item dropdown" style="margin: auto ;">
-                <a class="nav-link" style="background-color: #D2AC47 ;color: white;padding-top:15px ;padding-bottom:15px;padding-right: 15px; padding-left: 15px; "  role="button" aria-haspopup="true" aria-expanded="false" href="contact.html">Contact-us</a>
+                <a class="nav-link btn btn-common btn-common-element btn-round btn-theme" style="background-color:  #D2AC47 ;color: white;padding-top:15px ;padding-bottom:15px;padding-right: 15px; padding-left: 15px; "  role="button" aria-haspopup="true" aria-expanded="false" href="contact.html">Contact-us</a>
               </li>
         </div>
       </nav>
@@ -131,374 +152,180 @@
 
 
 
-<!-- SINGLE SERVICE -->
-    <section class="clearfix singleService">
-      <div class="container">
+<!-- MAIN SLIDER -->
+    <section class="main-slider" >
+      <div class="inner">
+        
+        <!-- Slide One -->
+        <!-- Slide Two -->
+        <!-- Slide Three -->
+        <div class="slide slideResize slide1" style="background-image: url(img/home/consultation.jpg);">
+          <div class="container  blur" style="margin: 0;max-width: 100%;max-height: 100%;">
+            <div class="slide-inner1 common-inner" style="text-align: center;width: 100%;">
+              <!-- <span class="h1 from-bottom">luxury spa resort</span><br> -->
+              <span style="font-size: 50px; line-height: 1.5;text-align: center;font-weight: 600;width: 100%;color: white;padding: 0 8px;">Get a consultation with a medical expert today!</span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Slide Four -->
+    </section>
+
+    <section class="patternbg clearfix callAction">
+      <div class="container" style="background-color:#D2AC47; padding: 1rem 0.5rem;">
         <div class="row">
-          <div class="col-sm-4 col-xs-12">
-            <ul class="nav nav-tabs nav-stacked" id="singleServiceTab">
-              <li class="tabList active openTab">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                  Hair <i class="fa fa-angle-up"></i>
-                </a>
-                <ul class="dropdown-menu" id="collapsed">
-                  <li class="active"><a href="#braidstwist" data-toggle="tab">Braids & Twist <span>$25</span></a></li>
-                  <li><a href="#haircolor" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                  <li><a href="#hairextension" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                  <li><a href="#correctivecolor" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                  <li><a href="#haircut" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                  <li><a href="#partialfoil" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                  <li><a href="#extensionpertrack" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                </ul>
-              </li>
 
-              <li class="tabList">
-                <a class="btn dropdown-toggle" href="#">
-                  Makeup <i class="fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="collapsed1">
-                  <li><a href="#braidstwist1" data-toggle="tab">Braids & Twist <span>$25</span></a></li>
-                  <li><a href="#haircolor1" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                  <li><a href="#hairextension1" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                  <li><a href="#correctivecolor1" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                  <li><a href="#haircut1" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                  <li><a href="#partialfoil1" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                  <li><a href="#extensionpertrack1" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                </ul>
-              </li>
+          <div style="padding: 1rem;">
 
-              <li class="tabList">
-                <a class="btn dropdown-toggle" href="#">
-                  Facial <i class="fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="collapsed2">
-                  <li><a href="#braidstwist3" data-toggle="tab">Braids & Twist <span>$25</span></a></li>
-                  <li><a href="#haircolor11" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                  <li><a href="#hairextension11" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                  <li><a href="#correctivecolor11" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                  <li><a href="#haircut11" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                  <li><a href="#partialfoil11" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                  <li><a href="#extensionpertrack11" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-sm-8 col-xs-12">
-            <div class="tab-content">
-              <div class="tab-pane active" id="braidstwist">
-                <div class="varietyContent">
-                  <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                  <h3>Braids & Twist</h3>
-                  <h4>$25.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircolor">
-                <div class="varietyContent">
-                  <img src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Color</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="hairextension">
-                <div class="varietyContent">
-                  <img src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Extension</h3>
-                  <h4>$19.00 Per Head</h4>
-                  <p>Amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="correctivecolor">
-                <div class="varietyContent">
-                  <img src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Corrective Color</h3>
-                  <h4>$13.00 Per Head</h4>
-                  <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircut">
-                <div class="varietyContent">
-                  <img src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Cut</h3>
-                  <h4>$48.00 Per Head</h4>
-                  <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="partialfoil">
-                <div class="varietyContent">
-                  <img src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Partial Foil</h3>
-                  <h4>$10.00 Per Head</h4>
-                  <p>Sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="extensionpertrack">
-                <div class="varietyContent">
-                  <img src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Extension Per Track</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="braidstwist2">
-                <div class="varietyContent">
-                  <img src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Braids & Twist</h3>
-                  <h4>$25.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircolor1">
-                <div class="varietyContent">
-                  <img src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Color</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="hairextension1">
-                <div class="varietyContent">
-                  <img src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Extension</h3>
-                  <h4>$19.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="correctivecolor1">
-                <div class="varietyContent">
-                  <img src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Corrective Color</h3>
-                  <h4>$13.00 Per Head</h4>
-                  <p>Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircut1">
-                <div class="varietyContent">
-                  <img src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Cut</h3>
-                  <h4>$48.00 Per Head</h4>
-                  <p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="partialfoil1">
-                <div class="varietyContent">
-                  <img src="img/home/variety.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Partial Foil</h3>
-                  <h4>$10.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="extensionpertrack1">
-                <div class="varietyContent">
-                  <img src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Extension Per Track</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="braidstwist4">
-                <div class="varietyContent">
-                  <img src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Braids & Twist</h3>
-                  <h4>$25.00 Per Head</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircolor11">
-                <div class="varietyContent">
-                  <img src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Color</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="hairextension11">
-                <div class="varietyContent">
-                  <img src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Extension</h3>
-                  <h4>$19.00 Per Head</h4>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="correctivecolor11">
-                <div class="varietyContent">
-                  <img src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Cut</h3>
-                  <h4>$48.00 Per Head</h4>
-                  <p>Nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="haircut11">
-                <div class="varietyContent">
-                  <img src="img/home/variety.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Hair Cut</h3>
-                  <h4>$48.00 Per Head</h4>
-                  <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
-
-              <div class="tab-pane" id="partialfoil11">
-                <div class="varietyContent">
-                  <img src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Partial Foil</h3>
-                  <h4>$10.00 Per Head</h4>
-                  <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
+            <div class="callInfo callact">
+              Getting access to quality healthcare is a challenge regardless of your location. Not only do you want it to be convenient, but you also want to receive treatment from an experienced doctor or healthcare personnel. Our team of healthcare experts are qualified and has the right license to treat you. All you need to do is to book an appointment with us. Our doctors are licensed, experienced and highly qualified.
+              You can book to have a general consultation. It could be virtual or face-to-face consultations. Of course, we love to work according to your schedule and this is why it is a premium consultation.
+              At CEO Health, we are determined to give you premium health services that cut across several spheres of health.            </div>
               
-              <div class="tab-pane" id="extensionpertrack11">
-                <div class="varietyContent">
-                  <img src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive">
-                  <h3>Extension Per Track</h3>
-                  <h4>$40.00 Per Head</h4>
-                  <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                  <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                </div>
-              </div>
+
             </div>
-
-            <div class="pageGallery gallery-col mt-5">
-              <div class="extraTitle">
-                <h3>Work Gallery</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-md">
-                  <li class="card">
-                    <div class="position-relative">
-                      <img src="img/home/offer-1.jpg" data-src="img/home/offer-1.jpg" class="card-img lazyestload" alt="Image Gallery">
-                      <a href="img/home/offer-1.jpg" data-fancybox="images" class="card-img-overlay w-100 p-0"></a>
-                    </div>
-
-                    <div class="gallery-text">
-                      Treatment
-                    </div>
-                  </li>
-                </div>
-
-                <div class="col-md">
-                  <li class="card">
-                    <div class="position-relative">
-                      <img src="img/home/offer-2.jpg" data-src="img/home/offer-2.jpg" class="card-img lazyestload" alt="Image Gallery">
-                      <a href="img/home/offer-2.jpg" data-fancybox="images" class="card-img-overlay w-100 p-0"></a>
-                    </div>
-
-                    <div class="gallery-text">
-                      Treatment
-                    </div>
-                  </li>
-                </div>
-
-                <div class="col-md">
-                  <li class="card">
-                    <div class="position-relative">
-                      <img src="img/home/offer-3.jpg" data-src="img/home/offer-3.jpg" class="card-img lazyestload" alt="Image Gallery">
-                      <a href="img/home/offer-3.jpg" data-fancybox="images" class="card-img-overlay w-100 p-0"></a>
-                    </div>
-
-                    <div class="gallery-text">
-                      Treatment
-                    </div>
-                  </li>
-                </div>
-
-                <div class="col-md">
-                  <li class="card">
-                    <div class="position-relative">
-                      <img src="img/home/offer-4.jpg" data-src="img/home/offer-4.jpg" class="card-img lazyestload" alt="Image Gallery">
-                      <a href="img/home/offer-4.jpg" data-fancybox="images" class="card-img-overlay w-100 p-0"></a>
-                    </div>
-
-                    <div class="gallery-text">
-                      Treatment
-                    </div>
-                  </li>
-                </div>
-
-                <div class="col-md">
-                  <li class="card">
-                    <div class="position-relative">
-                      <img src="img/home/offer-1.jpg" data-src="img/home/offer-1.jpg" class="card-img lazyestload" alt="Image Gallery">
-                      <a href="img/home/offer-1.jpg" data-fancybox="images" class="card-img-overlay w-100 p-0"></a>
-                    </div>
-
-                    <div class="gallery-text">
-                      Body Massage
-                    </div>
-                  </li>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
         </div>
       </div>
     </section>
+<!-- ABOUT SECTION -->
+
+<!-- VARIETY SECTION -->
+
+
+<section class="container-fluid clearfix aboutSection patternbg" >
+
+  <div class="rowy  ">
+    <div class="col-sm-6 col-xs-12 rightPadding">
+
+        <img class="img-responsive lazyestload" data-src="img/home/home-about.jpg" src="img/home/home-about.jpg" alt="Image About">
+
+    </div>
+    <div class="col-sm-6 col-xs-12" style="background-color: #fff;display: flex;justify-content: center;align-items: center; ">
+      <div class="welcome-card">            
+     <div >
+      <h3>Virtual Consultations</h3>
+      At CEO Health, we understand that you may not have all the time to walk into our office. This is why we have virtual consultations with clients who need them. To begin, give us a call or email us and then the process can commence.
+      Once you've booked an appointment, you can talk to the GP concerning your health matters. This includes talking about your general welfare, symptoms and health challenges. After all, we are here to serve you better. Our goal is to ensure that you are going about your daily activities healthily. 
+      As you know, some people have underlying health issues but choose to be discreet about them. They prefer to manage the symptoms while working, endangering themselves more in the process.
+      So why not make use of our premium virtual consultation? From the comfort of your home or office, you can speak to a qualified doctor and kick off your treatment plan as soon as possible. Don't forget that we are available round the clock to attend to your needs.
+      
+     </div>
+</div>
+          
+    </div>
+    
+</div>
+</section>
+
+<section class="container-fluid clearfix aboutSection patternbg" >
+
+  <div class="rowy  ">
+    <div class="col-sm-6 col-xs-12 rightPadding">
+
+        <img class="img-responsive lazyestload" data-src="img/home/home-about.jpg" src="img/home/home-about.jpg" alt="Image About">
+
+    </div>
+    <div class="col-sm-6 col-xs-12" style="background-color: #fff;display: flex;justify-content: center;align-items: center; ">
+      <div >            
+     <div class="welcome-card">
+      <h3>Face-to-face Consultation </h3>
+      As part of our premium health services, we offer face-to-face consultations. You get to meet with the GP and discuss any health issue that may be bothering you. This will also be scheduled to make it convenient for you. After putting a call through, a date will be picked. 
+After consultations, the GP will likely tell you a few more steps you have to take depending on the consultation conclusion. You may be required to take some tests. This will be to know the right treatment regimen for you. Of course, everything will be discussed with you.
+Our consultations are a way to know you better and to know what prescription to administer to you. Therefore, you need to be completely open and honest during consultations, whether virtual or physical. We want you to get better and want you to be the best version of yourself. Our healthcare services are intended to make you feel more alive.
+
+     </div>
+</div>
+          
+    </div>
+    
+</div>
+</section>
+<!-- OFFERS SECTION -->
+
+
+<!-- PRODUCT SECTION -->
+<!-- PARTNER LOGO SECTION -->
+
+
+
+<!-- REVIEW SECTION -->
+
+
+
+  <!-- HOME GALLERY SECTION -->
+
+
+
+<!-- CALL TO ACTION SECTION -->
+
+
+<!-- EXPERT SECTION -->
+<!-- PARTNER LOGO SECTION -->
+    <section class="clearfix patternbg vbig-card">
+      <div class="big-card">
+        <h2>Why Choose CEO Health Consultations?</h2>
+      <h4>There are several healthcare establishments out there offering consultations and treatments to patients. However, here are reasons why you might want to work with us: </h4>
+      <ul>
+        <li><span style="font-weight: 600; font-size: 16px;">Schedule your own time</span>: We value your time and this is why we work according to your schedule. Simply call us and book an appointment. Tell us when you would be free for a consultation and we will fix the date for you. It could be virtual or you can see the GP physically. Anything that works best for you is what we are after. If there is a situation where we think it is best to physically meet the doctor, you will also be communicated with. </li>
+        <li><span style="font-weight: 600; font-size: 16px;">Qualified personnel</span>:Our medical health practitioners are well-trained and duly licensed. We have a team of qualified health experts who will do all in their power to give you a seamless experience.</li>
+        <li><span style="font-weight: 600; font-size: 16px;">You can see a GP on the same day if you have an urgent issue. Depending on the severity of your issue, you can be connected with a doctor on the same day.</li>
+        <li><span style="font-weight: 600; font-size: 16px;">Confidentiality</span>: This is our number one watchword. We are a trustworthy brand. As such, every piece of information you pass to our staff is highly confidential. We respect our clients and we would keep their details safe. Therefore, you can trust us to tell us anything.</li>
+        <li><span style="font-weight: 600; font-size: 16px;">Same-day bookings</span>: You can reach out to us and get an appointment on the same day, depending on the urgency of your issue. We understand that there are cases that need </li>
+      </ul>
+      </div>
+    </section>
+
+<!-- PRICING SECTION -->
+
+
+<!-- CONTACT US SECTION -->
+    <section class="clearfix contactSection padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-7 col-xl-8">
+            <div class="contactTitle">
+              <h3>Take the first step to health <br> Get in touch</h3>
+            </div>
+
+            <div class="contactForm">
+              <div id="alert"></div><!--Response Holder-->
+              <form action="mail/contact-form.php" id="angelContactForm" method="post">
+              <div class="form-group">
+                  <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
+                </div>
+               <div class="form-group">
+                  <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 col-xl-4">
+            <div class="holdingInfo patternbg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiselit, sed do eiusmod.</p>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> 16/14 Babor Road, Mohammad pur Dhaka, Bangladeshincididunt </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> +55 654 545 122 <br>+55 654 545 123</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br><a href="mailto:info2@example.com">info2@example.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- PARTNER LOGO SECTION -->
 
 
 
@@ -588,61 +415,15 @@
               <div class="useLink">
                 <ul class="list-unstyled">
                   <li><a href="about.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>About Us</a></li>
-                  <li><a href="service.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Services</a></li>
                   <li><a href="blog-fullwidth.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Blog</a></li>
-                  <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Imaging</a></li>
+                  <li><a href="imaging.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Imaging</a></li>
+                  <li><a href="consultation.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Consultation</a></li>
+                  <li><a href="lab-test.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Lab-tests</a></li>
                   <li><a href="contact.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Contact us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="footerInfoTitle">
-                <h4>Gallery</h4>
-              </div>
-              <div class="footerGallery row">
-                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-1.jpg" src="img/home/footer-gallery-1.jpg" alt="gallery-img">
-                  </a>
-                </div>
-
-                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-2.jpg" src="img/home/footer-gallery-2.jpg" alt="gallery-img">
-                  </a>
-                </div>
-
-                <div class="col-4 col-md-6 col-lg-4 mb-3 mb-md-0">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-3.jpg" src="img/home/footer-gallery-3.jpg" alt="gallery-img">
-                  </a>
-                </div>
-
-                <div class="col-4 col-md-6 col-lg-4">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-4.jpg" src="img/home/footer-gallery-4.jpg" alt="gallery-img">
-                  </a>
-                </div>
-
-                <div class="col-4 col-md-6 col-lg-4">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-5.jpg" src="img/home/footer-gallery-5.jpg" alt="gallery-img">
-                  </a>
-                </div>
-
-                <div class="col-4 col-md-6 col-lg-4">
-                  <a href="gallery-v2.html">
-                    <img class="lazyestload" data-src="img/home/footer-gallery-6.jpg" src="img/home/footer-gallery-6.jpg" alt="gallery-img">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-3 col-xs-12">
-              <div class="footerInfoTitle">
-                <h4>Newsletters</h4>
-              </div>
-
+      
               <div class="footerText">
                 <p>Sign up for our mailing list to get latest updates and offers.</p>
                 <form class="input-group">
@@ -713,11 +494,11 @@
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src='plugins/selectbox/jquery.selectbox-0.1.3.min.js'></script>
-  
-  
+  <script src='plugins/owl-carousel/owl.carousel.min.js'></script>
+  <script src='plugins/isotope/isotope.min.js'></script>
   <script src='plugins/fancybox/jquery.fancybox.min.js'></script>
   
-  
+  <script src='plugins/isotope/isotope-triger.min.js'></script>
   <script src='plugins/datepicker/bootstrap-datepicker.min.js'></script>
   
   <script src="plugins/lazyestload/lazyestload.js"></script>

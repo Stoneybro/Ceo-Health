@@ -194,6 +194,14 @@ a:hover, a:focus {
 .secotionTitle {
   text-align: center;
 }
+.blur{
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+}
 .vbig-card{
   height: 100vh;
   display: flex;
@@ -221,13 +229,19 @@ a:hover, a:focus {
    font-size: 28px;
     line-height: 1.5;
     text-align: center;
+    
 }
+
 .welcome{
   text-align: left;
   padding: 20px;
   font-size: 28px; 
   line-height: 1.5;
   color: black;
+}
+section .x-card{
+  display: flex;
+  font-size: 2rem;
 }
 
 @media (min-width: 320px) {
@@ -243,7 +257,7 @@ a:hover, a:focus {
   }
   .callact{
      font-size: 20px;
-     padding: 0 12px;
+     padding: 12px;
   }
   .big-card{
     padding: 2.5rem 1rem;
@@ -277,6 +291,17 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .secotionTitle {
     padding: 100px 0 80px 0;
+  }
+  .c{
+    text-align: center;
+    width: 100%;
+  }
+  .callact{
+    color: white;
+
+      line-height: 1.5;
+      text-align: center;
+      padding: 1rem;
   }
 }
 
@@ -2580,6 +2605,8 @@ textarea.form-control {
   }
 }
 
+
+
 @media (min-width: 1200px) {
   .main-nav .dropdown-menu {
     min-width: 230px;
@@ -3414,11 +3441,7 @@ textarea.form-control {
   }
 }
 
-@media (min-width: 768px) {
-  .main-slider .common-inner {
-    padding-left: 15px;
-  }
-}
+
 
 .owl-stage-outer {
   border-bottom: 4px solid #ec5598;
@@ -3426,13 +3449,13 @@ textarea.form-control {
 
 .main-slider .slide-inner1, .main-slider .slide-inner2, .main-slider .slide-inner4 {
   position: absolute;
+  left: 0;
 }
 
 @media (min-width: 320px) {
   .main-slider .slide-inner1, .main-slider .slide-inner2, .main-slider .slide-inner4 {
     transform: translate(0, -50%);
     top: 50%;
-    left: 5%;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -3446,7 +3469,7 @@ textarea.form-control {
     /* transform: translate(0, -30%); */
     top: 50%;
     left: 0;
-    width: 60%;
+
     color: black;
   }
 }
@@ -3575,16 +3598,23 @@ textarea.form-control {
     padding: 0 0 50px 0;
   }
 }
-
+@media (min-width: 768px){
+  .aboutInner {
+    width: 50%;
+    float: right;
+    height: 650px;
+    padding: 120px 0 0 0;
+    background-color: #ffffff;
+}
+}
 .aboutInner {
-  position: relative;
+position: relative;
+  
 }
 
 @media (min-width: 320px) {
   .aboutInner {
-    height: auto;
-    padding: 0 15px 0 15px;
-    background-color: transparent;
+
   }
   
 }
@@ -3595,8 +3625,9 @@ textarea.form-control {
   width: 100%;
   flex-wrap: wrap;
 }
+
 @media (min-width: 768px) {
-  .aboutInner {
+  .aboutInnec {
     width: 50%;
     float: right;
     height: 650px;
