@@ -53,7 +53,32 @@
 /*=== MIXINS ===*/
 /*=== VARIABLES ===*/
 /*=== MEDIA QUERY ===*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --e-global-color-primary: #384963;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #384963;
+  --e-global-color-accent: #61CE70;
+  --e-global-color-27fb149: #E7F6FF;
+  --e-global-color-e90cede: #38496300;
+  --e-global-color-ded7247: #AEE2FF;
+  --e-global-color-6fa3150: #F4CE04;
+  --e-global-color-e22b34f: #5CA9E9;
+  --e-global-typography-primary-font-family: "Montserrat";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Montserrat";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Montserrat";
+  --e-global-typography-text-font-size: 20px;
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-text-line-height: 1.4em;
+  --e-global-typography-accent-font-family: "Montserrat";
+  --e-global-typography-accent-font-weight: 500;
+  --gradient--amber: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+  --gradient--orange: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+  --btn-theme-hover:linear-gradient(266.52deg,#FFB989 16.32%,#f8cb88 111.01%);
+  --btn-theme:linear-gradient(266.52deg,#FFB989 16.32%,#FFBF61 111.01%);
+}
 * {
   outline: 0;
   margin: 0;
@@ -67,7 +92,7 @@ html, * {
 }
 
 body {
-  font-family: 'Poppins', 'Open-sans',sans-serif;
+  font-family: 'Montserrat', 'Open-sans',sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -225,7 +250,7 @@ a:hover, a:focus {
   list-style-type: disc;
 }
 .callact{
-  color: white;
+  color: var(--e-global-color-primary) !important;
    font-size: 28px;
     line-height: 1.5;
     text-align: center;
@@ -261,6 +286,8 @@ section .x-card{
   }
   .big-card{
     padding: 2.5rem 1rem;
+    background-color: var(--e-global-color-27fb149) !important;
+
   }
   .vbig-card{
    padding: 30px 0;
@@ -268,6 +295,7 @@ section .x-card{
   }
   .fa-quote-left,.fa-quote-right{
     font-size: 30px;
+    color: var(--e-global-color-primary);
   }
   .fa-quote-right{
     width: 100%;
@@ -337,11 +365,10 @@ section .x-card{
 }
 
 .patternbg {
-  background-image: url(../img/home/pattern-1.jpg);
+  background-color: white;
   background-attachment: fixed;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
+
 }
 
 ::-moz-selection {
@@ -812,14 +839,15 @@ button {
 }
 
 .btn-theme {
-  background-color: #ec5598;
-  border-color: #ec5598;
-  color: #ffffff;
+  background: var(--btn-theme);
+  border-color: transparent;
+  color: var(--e-global-color-primary);
+  font-family: 'Montserrat';
 }
 
 .btn-theme:focus, .btn-theme.active, .btn-theme:active, .btn-theme:hover {
-  background-color: #ec5598;
-  border-color: #ec5598;
+  background-color: var(--btn-theme-hover);
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -2256,7 +2284,7 @@ textarea.form-control {
 .main-nav {
   z-index: 999;
   padding: 0px;
-  background-color: #ffffff;
+  background-color: #E7F6FF;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2445,10 +2473,10 @@ textarea.form-control {
 .main-nav .nav-item a.nav-link {
   color: #222222;
   padding: 0px;
-  font-size: 13px;
+  font-size: 18px !important;
   position: relative;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300 !important;
   display: block;
   margin: 10px 15px;
   transition: all 0.3s ease;
@@ -2504,7 +2532,7 @@ textarea.form-control {
 }
 
 .main-nav .nav-item.show a.nav-link {
-  color: #ec5598;
+  color: white;
 }
 
 .main-nav .nav-item.show > .dropdown-toggle::after {
@@ -3604,7 +3632,7 @@ textarea.form-control {
     float: right;
     height: 650px;
     padding: 120px 0 0 0;
-    background-color: #ffffff;
+    background-color: var(--e-global-color-27fb149);
 }
 }
 .aboutInner {
@@ -4538,7 +4566,8 @@ position: relative;
 /*================= 5.6 CALL TO ACTION SECTION ==================*/
 .callAction {
   padding: 60px 0;
-  background-color: #ec5598;
+  background-color: var(--e-global-color-ded7247);
+  color: var(--e-global-color-primary);
 }
 
 .callInfo p {

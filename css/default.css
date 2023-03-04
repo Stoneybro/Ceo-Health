@@ -1,8 +1,7 @@
 /*=== MIXINS ===*/
 /*=== VARIABLES ===*/
 /*=== MEDIA QUERY ===*/
-h3 a:hover,
-a,
+h3,
 .secotionTitle h2 span,
 .tabCommon.singleTab .tab-pane h4,
 .tabCommon.singleTab .tab-pane .blogCommnets .media-body .btn-link,
@@ -64,12 +63,8 @@ a,
 .reviewInfo .fa-quote-left,
 .custom-categories .custom-accordion .custom-panel h5,
 .custom-categories .custom-accordion .custom-panel .custom-panel-body a:hover,
-.main-nav .nav-item.active a.nav-link,
-.main-nav .nav-item a.nav-link:hover,
-.main-nav .dropdown-menu a:hover,
-.main-nav .nav-item.show a.nav-link,
-.main-nav .dropdown-menu li.dropdown.show > a,
-.tabTop .nav li a.active,
+
+
 .custom-categories .custom-accordion .custom-panel h5:hover,
 .innerWrapper .table-responsive .table tbody th:first-child,
 .productSection .owl-nav .owl-prev:before,
@@ -104,8 +99,6 @@ a,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover,
 .backToTop,
-.btn-theme, .btn-theme:focus,
-.btn-theme.active, .btn-theme:active, .btn-theme:hover,
 .paginationCommon .pagination li a:hover,
 .paginationCommon .pagination li.active a,
 .paginationCommon .pagination li.active a:focus,
@@ -138,7 +131,7 @@ a,
 .dashboard.list-inline li .btn-lg:hover,
 .innerWrapper .table-responsive .table thead tr th,
 .innerWrapper .table-responsive .table tbody tr td .btn-default:hover,
-.callAction,
+
 .custom-categories h4,
 .morphing-btn-clone,
 .fancybox-morphing .fancybox-bg,
@@ -148,19 +141,18 @@ a,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .imagediv .showonhover,
 .expertSection .owl-theme .owl-dots .owl-dot.active span, .expertSection .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #D2AC47;
+  background-color:#384963;
 }
 
 ::-moz-selection {
-  background-color: #D2AC47;
+  background-color:#384963;
 }
 
 ::selection {
-  background-color: #D2AC47;
+  background-color:#384963;
 }
 
-.btn-theme, .btn-theme:focus,
-.btn-theme.active, .btn-theme:active, .btn-theme:hover,
+
 .paginationCommon .pagination li a:hover,
 .paginationCommon .pagination li.active a,
 .paginationCommon .pagination li.active a:focus,
@@ -187,18 +179,18 @@ a,
 .tabCommon.singleTab .nav-tabs li a.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .expertSection .owl-theme .owl-dots .owl-dot span {
-  border-color: #D2AC47;
+  border-color:#384963;
 }
 
 @media (min-width: 768px) {
   .navbar .navbar-nav li.open .dropdown-menu,
   .navbar .navbar-nav li.dropdown .dropdown-menu {
-    border-top-color: #D2AC47;
+    border-top-color:#384963;
   }
 }
 
 .footerInfo {
-  border-top-color: #D2AC47;
+  border-top-color:#384963;
 }
 
 .tabs-left .nav li a.active,
@@ -210,25 +202,25 @@ a,
 .tabs-left .nav li.active a a:active,
 .homeGallery ul.filter > li.active > a,
 .homeGallery ul.filter > li > a:hover {
-  border-bottom-color: #D2AC47;
+  border-bottom-color:#384963;
 }
 
 .tabTop .nav li a.active span,
 .tabTop .nav li.active a span,
 .tabTop .nav li a:hover span {
-  border-bottom-color: #D2AC47;
+  border-bottom-color: rgba(35,24,21, 0.5);
 }
 
 .offerContent .offerTitle,
 .productMask {
-  background-color: rgba(35,24,21, 0.5);
+  background-color: #aee3ff73;
 }
 
 .expertMask, .priceTableWrapper:hover .maskImage,
 .fancybox-bg {
-  background-color: rgba(35,24,21, 0.5);
+  background-color: rgba(35, 24, 21, 0.374);
 }
 
 .footerText .footerLogo .fill-primary {
-  fill: rgba(115, 94, 89);
+  fill:#384963;
 }
