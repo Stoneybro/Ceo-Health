@@ -69,32 +69,26 @@ h3,
 .innerWrapper .table-responsive .table tbody th:first-child,
 .productSection .owl-nav .owl-prev:before,
 .productSection .owl-nav .owl-next:before {
-  color:  #D2AC47;
+  color:  #384963;
 }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-nav li.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover,
   .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:hover {
-    color:  #D2AC47;
+    color:  white;
   }
 }
 
 .countrySelect .sbOptions a:hover,
 .custom-categories .custom-accordion .custom-panel h5:hover {
-  color:  #D2AC47 !important;
+  color:  white !important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:focus,
-.btn-primary.active, .btn-primary:active,
+
 .btn-secondary:hover, .btn-secondary:focus,
 .btn-secondary.active, .btn-secondary:active,
-.btn-primary.active.focus,
-.btn-primary.active:focus,
-.btn-primary.active:hover,
-.btn-primary:active.focus,
-.btn-primary:active:focus,
-.btn-primary:active:hover,
+
 .open > .dropdown-toggle.btn-primary.focus,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover,
@@ -114,7 +108,7 @@ h3,
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
 .cart_btn a span,
-.footerText .input-group-addon,
+
 .productImage a:hover i,
 .priceTag,
 .expertSection .carousel-indicators li.active,
@@ -161,8 +155,7 @@ h3,
 .tabCommon.singleTab .nav-tabs li.active a,
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
-.footerText .form-control:focus,
-.footerText .input-group-addon,
+
 .expertSection .carousel-indicators li,
 .comingInner .form-control:focus,
 .comingInner .input-group-addon,
@@ -221,6 +214,4 @@ h3,
   background-color: rgba(35, 24, 21, 0.374);
 }
 
-.footerText .footerLogo .fill-primary {
-  fill:#384963;
-}
+
