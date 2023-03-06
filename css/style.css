@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', 'Open-sans',sans-serif;
   text-transform: uppercase;
   margin-top: 0;
-
+  color: var(--e-global-color-primary);
 }
 
 
@@ -144,10 +144,17 @@ h2 {
   line-height: 33px;
   font-weight: 600;
 }
+.section-switch{
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 @media (min-width: 480px) {
   h2 {
     font-size: 24px;
+  }
+  .section-switch{
+    flex-direction: column;
   }
 }
 
@@ -495,17 +502,24 @@ body.bodyColor.wrapper {
   margin: 0 auto;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
 }
+.home{
+  display: block;
+}
 
 @media (min-width: 480px) {
   body.bodyColor.wrapper {
     max-width: 450px;
   }
 
+
 }
 
 @media (min-width: 768px) {
   body.bodyColor.wrapper {
     max-width: 750px;
+  }
+  .home{
+    display: none;
   }
 }
 
@@ -2540,7 +2554,7 @@ textarea.form-control {
 }
 
 .main-nav .nav-item.show a.nav-link {
-  color: white;
+  color: var(--e-global-color-primary);
 }
 
 .main-nav .nav-item.show > .dropdown-toggle::after {

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - Ceo Health</title>
+  <title>Ceo Health</title>
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -19,12 +19,12 @@
 
   <link href='plugins/selectbox/select_option1.css' rel='stylesheet'>
   <link href='plugins/owl-carousel/owl.carousel.min.css' rel='stylesheet' media='screen'>
+  <link href='plugins/fancybox/jquery.fancybox.min.css' rel='stylesheet'>
   
-  
-  
+  <link href='plugins/isotope/isotope.min.css' rel='stylesheet'>
   <link href='plugins/datepicker/datepicker.min.css' rel='stylesheet'>
   
-  
+ 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
   <link href="#" rel="stylesheet" id="rtl_css">
@@ -40,7 +40,30 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  
+  <style>
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript,
+    if it's not present, don't show loader */
+    .no-js #loader {
+      display: none;
+    }
+
+    .js #loader {
+      display: block;
+      position: absolute;
+      left: 100px; top: 0;
+    }
+
+    .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(plugins/simple-pre-loader/images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+    }
+  </style>
 
 </head>
 
@@ -63,18 +86,27 @@
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item home">
+                <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item home">
+                <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+              </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="consultation.html">CONSULTATION <span class="sr-only">(current)</span></a>
               </li>
 
               <li class=" dropdown megaDropMenu nav-item " >
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Services</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">IV THERAPY</a>
 
                 <ul class="row dropdown-menu justify-content-md-between">
                   <li class="">
                     <ul class="list-unstyled">
                       <li><a href="services/anti-aging.html">Anti-aging</a></li>
-                      <li><a href="anti-inflammatory.html">Anti-inflammatory</a></li>
+                      <li><a href="services/anti-inflammatory.html">Anti-inflammatory</a></li>
                       <li><a href="services/detox.html">Detoxification</a></li>
                       <li><a href="services/energy-boost.html">Energy boost</a></li>
                       <li><a href="services/enhance-perfomance.html">Enhanced performance</a></li>
@@ -106,21 +138,86 @@
                 </ul>
               </li>
   
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" aria-haspopup="true"  data-toggle="dropdown" aria-expanded="false" href="about.html">About us</a>
-                <ul class="dropdown-menu">
-                    <li><a href="consultation.html">Consultation</a></li>
-                    <li><a href="imaging.html">Imaging</a></li>
-                    <li><a href="lab-test.html">Lab test</a></li>
-                  </ul>
-            </li>
+              <li class=" dropdown megaDropMenu nav-item " >
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="./lab-test.html">LAB TESTS</a>
+
+                <ul class="row dropdown-menu justify-content-md-between">
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/anti-aging.html">Anti-aging</a></li>
+                      <li><a href="services/anti-inflammatory.html">Anti-inflammatory</a></li>
+                      <li><a href="services/detox.html">Detoxification</a></li>
+                      <li><a href="services/energy-boost.html">Energy boost</a></li>
+                      <li><a href="services/enhance-perfomance.html">Enhanced performance</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/hangover.html">Hangover</a></li>
+                      <li><a href="services/Hair-and-nails.html">Hair and nails</a></li>
+                      <li><a href="services/immunity.html">Immunity</a></li>
+                      <li><a href="services/mayer-cocktail.html">Mayer cocktail</a></li>
+                      <li><a href="services/muscle-recovery.html">Muscle Recovery</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/pain-relief.html">Pain relief</a></li>
+                      <li><a href="services/wellness.html">Wellness</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="javascript:void(0)" class="px-md-0"><img class="img-responsive lazyestload" data-src="img/home/pricing-1.jpg" src="img/home/pricing-1.jpg" alt="logo"></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false" href="blog-fullwidth.html">Blog</a>
+              <li class=" dropdown megaDropMenu nav-item " >
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="imaging.html">IMAGING</a>
+
+                <ul class="row dropdown-menu justify-content-md-between">
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/anti-aging.html">Anti-aging</a></li>
+                      <li><a href="services/anti-inflammatory.html">Anti-inflammatory</a></li>
+                      <li><a href="services/detox.html">Detoxification</a></li>
+                      <li><a href="services/energy-boost.html">Energy boost</a></li>
+                      <li><a href="services/enhance-perfomance.html">Enhanced performance</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/hangover.html">Hangover</a></li>
+                      <li><a href="services/Hair-and-nails.html">Hair and nails</a></li>
+                      <li><a href="services/immunity.html">Immunity</a></li>
+                      <li><a href="services/mayer-cocktail.html">Mayer cocktail</a></li>
+                      <li><a href="services/muscle-recovery.html">Muscle Recovery</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="services/pain-relief.html">Pain relief</a></li>
+                      <li><a href="services/wellness.html">Wellness</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="">
+                    <ul class="list-unstyled">
+                      <li><a href="javascript:void(0)" class="px-md-0"><img class="img-responsive lazyestload" data-src="img/home/pricing-1.jpg" src="img/home/pricing-1.jpg" alt="logo"></a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
 
               <li class="nav-item dropdown" style="margin: auto ;">
-                <a class="nav-link btn btn-common btn-common-element btn-round btn-theme" style="background-color:  #D2AC47 ;color: white;padding-top:15px ;padding-bottom:15px;padding-right: 15px; padding-left: 15px; "  role="button" aria-haspopup="true" aria-expanded="false" href="contact.html">Contact-us</a>
+                <a class="nav-link btn btn-common btn-common-element btn-round" style="background:linear-gradient(266.52deg,#FFB989 16.32%,#FFBF61 111.01%);padding-top:15px ;padding-bottom:15px;padding-right: 15px; padding-left: 15px; "  role="button" aria-haspopup="true" aria-expanded="false" href="contact.html">Contact-us</a>
               </li>
         </div>
       </nav>
@@ -129,1178 +226,157 @@
 
 
 
-<!-- PAGE TITLE SECTION -->
-    <section class="clearfix pageTitleArea" style="background-image: url(img/blog/pageTitle-bg.jpg);">
-        <div class="container">
-	        <div class="pageTitle">
-	            <h1>About Us</h1>
-	        </div>
-        </div>
-    </section>
+<!-- MAIN SLIDER -->
+<h1 style="text-align: center; margin: 4rem 0;">
+  ABOUT US
+</h1>
 
-
-<!-- ABOUT SECTION -->
-    <section class="container-fluid clearfix aboutSection patternbg" >
-      <div class="aboutInner">
-        <div class="sepcialContainer">
-          <div class="row">
-            <div class="col-sm-6 col-xs-12 rightPadding">
-              <div class="imagebox ">
-                <img class="img-responsive lazyestload" data-src="img/home/home-about.jpg" src="img/home/home-about.jpg" alt="Image About">
-              </div>
+<div class="section-switch">
+  <section class="container-fluid clearfix aboutSection patternbg" >
+    <div class="aboutInner">
+      <div class="sepcialContainer">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 rightPadding">
+            <div class="imagebox ">
+              <img class="img-responsive lazyestload" data-src="img/home/home-about.jpg" src="img/home/home-about.jpg" alt="Image About">
             </div>
-            <div class="col-sm-6 col-xs-12">
-              <div class="aboutInfo">
-                <h2>Angel luxury spa resort</h2>
-                <h3>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
-                  trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  cupidatat non proident.</p>
-              </div>
-            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="aboutInfo">
+           <div style="font-size: 20px;line-height: 1.5;"><h2 style="text-align: center;">Our Mission</h2>
+            Our mission is to bring high-quality healthcare services to your doorstep. Right from our laboratories to our main clinic, we encourage and work together to improve the health of our patients. We acknowledge that health is man's greatest asset. Therefore, we do all we can to keep health in check.
+            There are several ailments out there that people suffer from. Some take a toll on the body while others take quite sometime to develop. We encourage people to take occasional checks and tests. Our mission is to detect ailments earlier and profer the best solutions to them.
+               </div>
+                   </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 <!-- VARIETY SECTION -->
-    <section class="clearfix varietySection">
-      <div class="container">
-        <div class="secotionTitle">
-          <h2><span>Discover</span>variety of spa</h2>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="tabbable tabTop">
-              <ul class="nav nav-tabs">
-                <li><a href="#hair" data-toggle="tab" class="active"><span>Hair</span></a></li>
-                <li><a href="#makeup" data-toggle="tab"><span>Makeup</span></a></li>
-                <li><a href="#facial" data-toggle="tab"><span>Facial</span></a></li>
-                <li><a href="#massage" data-toggle="tab"><span>Massage</span></a></li>
-                <li><a href="#nail" data-toggle="tab"><span>Nail</span></a></li>
-                <li><a href="#waxing" data-toggle="tab"><span>Waxing</span></a></li>
-              </ul>
-              
-              <div class="tab-content">
-                <div class="tab-pane active" id="hair">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
+<section class="container-fluid clearfix aboutSection patternbg" >
 
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="javascript:void(0)" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
+    <div class="rowy  ">
+      <div class="col-sm-6 col-xs-12 rightPadding">
 
-                          <div class="tab-pane" id="haircolor">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
+          <img class="img-responsive lazyestload" data-src="img/home/home-about.jpg" src="img/home/home-about.jpg" alt="Image About">
 
-                          <div class="tab-pane" id="hairextension">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="correctivecolor">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Corrective Color</h3>
-                              <h4>$13.00 Per Head</h4>
-                              <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="haircut">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="partialfoil">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="extensionpertrack">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="tab-pane" id="makeup">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist1" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor1" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension1" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor1" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut1" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil1" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack1" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircolor1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="hairextension1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="correctivecolor1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Corrective Color</h3>
-                              <h4>$13.00 Per Head</h4>
-                              <p>Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircut1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="partialfoil1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="extensionpertrack1">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane" id="facial">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist2" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor11" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension11" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor11" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut11" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil11" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack11" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist2">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircolor11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="hairextension11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="correctivecolor11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircut11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="partialfoil11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="extensionpertrack11">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane" id="massage">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist3" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor112" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension112" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor112" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut112" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil112" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack112" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist3">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="haircolor112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="hairextension112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="correctivecolor112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Corrective Color</h3>
-                              <h4>$13.00 Per Head</h4>
-                              <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="haircut112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="partialfoil112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-
-                          <div class="tab-pane" id="extensionpertrack112">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane" id="nail">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist4" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor113" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension113" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor113" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut113" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil113" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack113" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist4">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircolor113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="hairextension113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="correctivecolor113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Corrective Color</h3>
-                              <h4>$13.00 Per Head</h4>
-                              <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircut113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="partialfoil113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="extensionpertrack113">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Gna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tab-pane" id="waxing">
-                  <div class="tabbable tabs-left">
-                    <div class="row">
-                      <div class="col-md-5 col-lg-4">
-                        <ul class="nav nav-tabs">
-                          <li><a href="#braidstwist5" data-toggle="tab" class="active">Braids & Twist <span>$25</span></a></li>
-                          <li><a href="#haircolor114" data-toggle="tab">Hair Color <span>$40</span></a></li>
-                          <li><a href="#hairextension114" data-toggle="tab">Hair Extension<span>$19</span></a></li>
-                          <li><a href="#correctivecolor114" data-toggle="tab">Corrective Color<span>$13</span></a></li>
-                          <li><a href="#haircut114" data-toggle="tab">Hair Cut<span>$48</span></a></li>
-                          <li><a href="#partialfoil114" data-toggle="tab">Partial Foil<span>$10</span></a></li>
-                          <li><a href="#extensionpertrack114" data-toggle="tab">Extension Per Track<span>$40</span></a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-md-7 col-lg-8">
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="braidstwist5">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Braids & Twist</h3>
-                              <h4>$25.00 Per Head</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn" data-toggle="modal" data-target="#appoinmentModal">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircolor114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety.jpg" data-src="img/home/variety.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Color</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="hairextension114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-2.jpg" data-src="img/home/variety-2.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Extension</h3>
-                              <h4>$19.00 Per Head</h4>
-                              <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="correctivecolor114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-3.jpg" data-src="img/home/variety-3.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Corrective Color</h3>
-                              <h4>$13.00 Per Head</h4>
-                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="haircut114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-4.jpg" data-src="img/home/variety-4.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Hair Cut</h3>
-                              <h4>$48.00 Per Head</h4>
-                              <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="partialfoil114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-5.jpg" data-src="img/home/variety-5.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Partial Foil</h3>
-                              <h4>$10.00 Per Head</h4>
-                              <p>Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-    
-                          <div class="tab-pane" id="extensionpertrack114">
-                            <div class="varietyContent">
-                              <img src="img/home/variety-6.jpg" data-src="img/home/variety-6.jpg" alt="Image Variety" class="img-responsive lazyestload">
-                              <h3>Extension Per Track</h3>
-                              <h4>$40.00 Per Head</h4>
-                              <p>Bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                              <a href="#" class="btn btn-primary first-btn">make An Appoinment</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-
-
-<!-- REVIEW SECTION -->
-    <section class="clearfix reviewSection patternbg">
-      <div class="container">
-        <div class="secotionTitle">
-          <h2><span>Testimonials </span>Customer reviews</h2>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <div class="reviewImage">
-              <img src="img/home/testimonial-1.jpg" data-src="img/home/testimonial-1.jpg" alt="Image review" class="img-responsive lazyestload">
-            </div>
-
-            <div class="reviewInfo mb-md-0">
-              <i class="fa fa-quote-left" aria-hidden="true"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip ex ea commodo conse quat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-              <h3>Linda Smith</h3>
-              <h4>Founder, Angel Beauty Spa</h4>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="reviewImage">
-              <img src="img/home/testimonial-2.jpg" data-src="img/home/testimonial-2.jpg" alt="Image review" class="img-responsive lazyestload">
-            </div>
-
-            <div class="reviewInfo mb-0">
-              <i class="fa fa-quote-left" aria-hidden="true"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip ex ea commodo conse quat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-              <h3>Linda Smith</h3>
-              <h4>Founder, Angel Beauty Spa</h4>
-            </div>
-          </div>
-        </div>
+      <div class="col-sm-6 col-xs-12" style="background-color: #E7F6FF;display: flex;justify-content: center;align-items: center; ">
+        <div class="welcome-card">
+          <i class="fa fa-quote-left" " aria-hidden="true"></i>
+          
+       <div class="welcome"> We are a team of seasoned and well trained health specialists that seek to provide excellent healthcare services to individuals. We strive to improve the health of patients and help people lead longer lives by offering our premium services.</div>
+       <i class="fa fa-quote-right" aria-hidden="true"></i>     </div>
+            
       </div>
-    </section>
+      
+</div>
+</section>
+</div>
+<!-- ABOUT SECTION -->
 
 
-<!-- EXPERT SECTION -->
+
+<!-- OFFERS SECTION -->
+
+
+<!-- PRODUCT SECTION -->
 <!-- PARTNER LOGO SECTION -->
-<section class="clearfix expertSection">
-  <div class="container">
 
-    <div class="secotionTitle">
-      <h2><span>Meet </span>our experts</h2>
-    </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="owl-carousel expartSlider">
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div> 
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-2.jpg" src="img/home/team-2.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-3.jpg" src="img/home/team-3.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-4.jpg" src="img/home/team-4.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-3.jpg" src="img/home/team-3.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>  
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-4.jpg" src="img/home/team-4.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-2.jpg" src="img/home/team-2.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="expertBox">
-              <div class="expertImage">
-                <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="Image expert">
-                <div class="expertMask">
-                  <div class="socialArea">
-                    <ul class="list-inline">
-                      <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="expertCaption ">
-                <h2>Linda Smith</h2>
-                <p>Founder, Angel Beauty Spa</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+<section class="clearfix patternbg vbig-card">
+  <div class="big-card">
+    <h2>Our values at CEO health</h2>
+  <ul>
+    <li><span style="font-weight: 600; font-size: 16px;">Improved healthcare</span>: : We aim to provide the best healthcare services for all our patients. We are patient-centered and so, we partner with all our patients and treat them to the best of our ability</li>
+    <li><span style="font-weight: 600; font-size: 16px;">Teamwork: </span>: We work as a team to ensure that we offer our patients the best healthcare services</li>
+    <li><span style="font-weight: 600; font-size: 16px;">Respect</span>:We value respect so much and this is why we hold our patients in high regard. Despite any kind of ailment, we treat you with utmost respect. </li>
+    <li><span style="font-weight: 600; font-size: 16px;">Confidentiality</span>: We value confidentiality at our clinic. Therefore, whatever you discuss with us remains with us.</li>
+</ul>
   </div>
 </section>
 
-    <section class="clearfix expertSection d-none">
+
+    <section class="clearfix callAction">
       <div class="container">
-        <div class="secotionTitle">
-          <h2><span>Meet </span>our experts</h2>
-        </div>
         <div class="row">
-          <div class="col-12">
-            <div id="thubmnailTeamSlider" class="carousel slide thumbnailCarousel" dir="rtl">
+          <div>
+            <div class="callInfo callact">
+              <h2 style="text-align: center;">Our Priority Is You!</h2>
+              With years of experience, our health experts prioritise your health and will help you get better. We have the right modern equipment to aid tests and facilitate treatment. More so, we are keen on discoveries and this is why we engage in research on modern health topics. In this way, we discover ample ways to help your cause.
+              If you or anyone you know need the services of healthcare professionals, please reach out to us. You can contact us through our phone line or by email. We are quick to respond and we will schedule an appointment with you. 
+              CEO Health provides quality care in lab testing, imaging, consultations, wellness, weight loss, surgeries, therapy, and much more. We want to reassure all our clients that there's still a human approach to healthcare. It is your health, so take it back!
+            </div>
+          </div>
 
-              <ol class="carousel-indicators">
-                <li data-target="#thubmnailTeamSlider" data-slide-to="0" class="active"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="1"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="2"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="3"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="4"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="5"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="6"></li>
-                <li data-target="#thubmnailTeamSlider" data-slide-to="7"></li>
-              </ol>
+        </div>
+      </div>
+    </section>
 
-              <!-- Carousel items -->
-              <div class="carousel-inner">
 
-                <div class="carousel-item active">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
+
+
+    
+
+<!-- EXPERT SECTION -->
+<!-- PARTNER LOGO SECTION -->
+
+
+<!-- PRICING SECTION -->
+
+
+<!-- CONTACT US SECTION -->
+    <section class="clearfix contactSection padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-7 col-xl-8">
+            <div class="contactTitle">
+              <h3>Take the first step to health <br> Get in touch</h3>
+            </div>
+
+            <div class="contactForm">
+              <div id="alert"></div><!--Response Holder-->
+              <form action="mail/contact-form.php" id="angelContactForm" method="post">
+              <div class="form-group">
+                  <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-2.jpg" src="img/home/team-2.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
                 </div>
-
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-3.jpg" src="img/home/team-3.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
+               <div class="form-group">
+                  <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
                 </div>
-
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-4.jpg" src="img/home/team-4.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
                 </div>
+                <div class="form-group">
+                  <button type="submit" id="contact-submit-btn" class="btn btn-theme first-btn">send Message</button>
 
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
+              </form>
+            </div>
+          </div>
 
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-2.jpg" src="img/home/team-2.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-3.jpg" src="img/home/team-3.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="item-inner">
-                    <div class="expertBox">
-                      <div class="expertImage">
-                        <img class="lazyestload" data-src="img/home/team-4.jpg" src="img/home/team-4.jpg" alt="Image expert">
-                        <div class="expertMask">
-                          <div class="socialArea">
-                            <ul class="list-inline">
-                              <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="expertCaption ">
-                        <h2>Linda Smith</h2>
-                        <p>Founder, Angel Beauty Spa</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <a class="left carousel-control" href="#thubmnailTeamSlider" data-slide="prev">‹</a>
-              <a class="right carousel-control" href="#thubmnailTeamSlider" data-slide="next">›</a>
+          <div class="col-md-6 col-lg-5 col-xl-4">
+            <div class="holdingInfo patternbg">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiselit, sed do eiusmod.</p>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> 16/14 Babor Road, Mohammad pur Dhaka, Bangladeshincididunt </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> +55 654 545 122 <br>+55 654 545 123</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a> <br><a href="mailto:info2@example.com">info2@example.com</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
 <!-- PARTNER LOGO SECTION -->
-    <section class="clearfix brandArea patternbg">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="owl-carousel partnersLogoSlider">
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-1.png" src="img/home/brand-1.png" alt="Image Partner">
-                </div>
-              </div> 
 
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-2.png" src="img/home/brand-2.png" alt="Image Partner">
-                </div>
-              </div>
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-3.png" src="img/home/brand-3.png" alt="Image Partner">
-                </div>
-              </div>
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-4.png" src="img/home/brand-4.png" alt="Image Partner">
-                </div>
-              </div>
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-1.png" src="img/home/brand-1.png" alt="Image Partner">
-                </div>
-              </div>  
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-2.png"  src="img/home/brand-2.png" alt="Image Partner">
-                </div>
-              </div>
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-3.png" src="img/home/brand-3.png" alt="Image Partner">
-                </div>
-              </div>
-
-              <div class="slide">
-                <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="img/home/brand-4.png" src="img/home/brand-4.png" alt="Image Partner">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 <!-- APPOINMENT MODAL -->
@@ -1515,10 +591,10 @@
 
   <script src='plugins/selectbox/jquery.selectbox-0.1.3.min.js'></script>
   <script src='plugins/owl-carousel/owl.carousel.min.js'></script>
+  <script src='plugins/isotope/isotope.min.js'></script>
+  <script src='plugins/fancybox/jquery.fancybox.min.js'></script>
   
-  
-  
-  
+  <script src='plugins/isotope/isotope-triger.min.js'></script>
   <script src='plugins/datepicker/bootstrap-datepicker.min.js'></script>
   
   <script src="plugins/lazyestload/lazyestload.js"></script>
