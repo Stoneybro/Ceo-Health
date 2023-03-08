@@ -148,10 +148,18 @@ h2 {
   display: flex;
   flex-direction: column-reverse;
 }
-
+.cardx{
+  background-color: var(--e-global-color-27fb149);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  margin: 3.5rem 0;
+}
 @media (min-width: 480px) {
   h2 {
     font-size: 24px;
+  }
+  .cardx{
+    padding: 2rem 3rem;
   }
   .section-switch{
     flex-direction: column;
@@ -279,6 +287,9 @@ section .x-card{
   display: flex;
   font-size: 2rem;
 }
+.crazy{
+
+}
 
 @media (min-width: 320px) {
   .secotionTitle {
@@ -356,18 +367,42 @@ section .x-card{
   color: #222222;
   margin: 0;
 }
+.crazy{
+  display: flex;
+  background-color: var(--e-global-color-ded7247);
+  border-radius: 8px;
+  gap: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.crazy1{
+  background-color:var(--e-global-color-27fb149);
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 1rem;
+}
+.crazy1 h2{
+  text-align: center;
+}
 
 @media (min-width: 320px) {
   .secotionTitle h2 {
     font-size: 16px;
     letter-spacing: 4px;
   }
+
 }
 
 @media (min-width: 768px) {
   .secotionTitle h2 {
     font-size: 24px;
     letter-spacing: 10px;
+  }
+  .crazy{
+    flex-direction: row;
   }
 }
 
@@ -4719,12 +4754,12 @@ position: relative;
 }
 
 .priceTag {
-  background-color: #ec5598;
   border-radius: 100%;
   text-align: center;
   border: 5px solid #ffffff;
   position: absolute;
   left: 50%;
+
 }
 
 @media (min-width: 320px) {
@@ -4756,9 +4791,12 @@ position: relative;
 
 .priceTag h4 {
   margin: 0;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--e-global-color-27fb149);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+.white{
+  color: white;
 }
 
 @media (min-width: 320px) {
@@ -4788,7 +4826,6 @@ position: relative;
   padding: 60px 0 30px 0;
   text-align: center;
   border: 1px solid #dedede;
-  border-top: 0;
 }
 
 @media (min-width: 320px) {
@@ -4810,7 +4847,7 @@ position: relative;
 .priceInfo ul li {
   border-bottom: 1px solid #dedede;
   padding: 21px 0;
-  color: #666666;
+  color: var(--e-global-color-primary);
 }
 
 @media (min-width: 768px) {
@@ -5364,8 +5401,8 @@ footer {
 
 /*=== 4.2 FOOTER TOP ===*/
 .footerInfo {
-  padding: 96px 0 60px 0;
-  border-top: 4px solid #ec5598;
+  padding: 30px 0 15px 0;
+border-top: var(--e-global-color-primary) 4px solid;
 }
 
 @media (min-width: 320px) {
