@@ -2403,7 +2403,7 @@ textarea.form-control {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 150px;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -2650,7 +2650,7 @@ textarea.form-control {
     color: #545454;
   }
   .main-nav .dropdown-menu a:hover {
-    color: #ec5598;
+    color: var(--e-global-color-primary);
   }
 }
 
