@@ -4791,7 +4791,7 @@ position: relative;
 
 .priceTag h4 {
   margin: 0;
-  color: var(--e-global-color-27fb149);
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
