@@ -1010,7 +1010,7 @@ button {
   background-position: center top;
   padding-bottom: 0;
   position: relative;
-  padding: 105px 0;
+  padding: 50px 0;
   background-repeat: no-repeat;
 }
 
@@ -1019,7 +1019,7 @@ button {
   text-align: center;
   font-size: 55px;
   line-height: 60px;
-  color: #ffffff;
+  color: var(--e-global-color-text);
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
@@ -1032,7 +1032,7 @@ button {
 
 @media (min-width: 768px) {
   .pageTitle h1 {
-    font-size: 55px;
+    font-size: 40px;
   }
 }
 
@@ -7933,7 +7933,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle.noUi-handle-upper {
 
 @media (min-width: 768px) {
   .blogSingle {
-    padding: 100px 0;
+    padding: 0px 0;
   }
 }
 
