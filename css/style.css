@@ -156,18 +156,21 @@ h2 {
 }
 .cardy{
   background-color: var(--e-global-color-ded7247);
-  padding: 2rem 1.5rem;
+  padding: 1rem 0.5rem;
   margin: 0 1.5rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
 }
 .scardy{
   background-color: var(--e-global-color-27fb149);
   border-radius: 8px;
   padding: 2rem 1rem;
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .scardyb{
   flex:1 ;
@@ -207,6 +210,14 @@ h3 {
   h3 {
     font-size: 15px;
     margin-bottom: 15px;
+  }
+  .scardy{
+    flex-direction: row;
+    gap: 0;
+  }
+  .cardy{
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
   }
 }
 
