@@ -172,6 +172,14 @@ h2 {
   flex-direction: column;
   gap: 1.5rem;
 }
+.scardyx{
+  background-color: var(--e-global-color-27fb149);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .scardyb{
   flex:1 ;
 }
